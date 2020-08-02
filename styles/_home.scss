@@ -1,0 +1,54 @@
+.home {
+  text-align: center;
+  background: linear-gradient(
+    rgb(97, 0, 65),
+    rgb(177, 0, 88),
+    rgb(255, 49, 49)
+  );
+  min-height: 90vh;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+
+  h2 {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+  }
+
+  img {
+    padding-top: 10rem;
+    width: 2rem;
+  }
+}
+
+.nav-container {
+  background: rgb(97, 0, 65);
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+  position: sticky;
+}
+
+nav {
+  width: 80%;
+  margin: 1rem;
+  height: 4rem;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  animation: up 0.5s alternate infinite;
+  position: absolute;
+}
+
+@keyframes up {
+  from {
+    transform: translatey(0);
+  }
+  to {
+    transform: translatey(15px);
+  }
+}
